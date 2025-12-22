@@ -1,74 +1,44 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+
     <title>Weather Dashboard</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-image:url("pic.jpg");
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .weather-card {
-            background: white;
-            padding: 25px;
-            width: 300px;
-            border-radius: 12px;
-            text-align: center;
-            
-        }
-
-        input {
-            width: 90%;
-            padding: 8px;
-            margin-bottom: 10px;
-        }
-
-        button {
-            padding: 8px 15px;
-            background:skyblue;
-            color: rgb(235, 230, 230);
-            border: none;
-            border-radius: 5px;
-        
-        }
-        .temp {
-            font-size: 36px;
-            margin: 10px 0;
-        }     
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="weather-card">
-    <h2>Weather Dashboard</h2>
+    <h2> Weather Dashboard</h2>
 
-    <input type="text" id="city" placeholder="Enter city name">
-    <button onclick="showWeather()">Get Weather</button>
-
-    <h3 id="cityName">City</h3>
-    <div class="temp" id="temperature">--°C</div>
-    <div class="condition" id="condition">Weather condition</div>
-</div>
-
-<script>
-    function showWeather() {
-        let city = document.getElementById("city").value;
-
-        if (city === "") {
-            alert("Please enter a city name");
-            return;
-        }
-
+    <form class="form-section">
+        <input type="text" name="city" placeholder="Enter city name" required>
         
-        document.getElementById("cityName").innerText = city;
-        document.getElementById("temperature").innerText = "29°C";
-        document.getElementById("condition").innerText = "Sunny";
-    }
-</script>
+    </form>
+
+    <form class="form-section">
+        <label>Select Date:</label><br>
+        <input type="date">
+        <button type="submit">Get Weather</button>
+    </form>
+
+    <div class="weather-info">
+        <h3>City</h3>
+        <div class="temp">--C</div>
+        <div class="condition">Sunny</div>
+    </div>
+
+    <form class="form-section">
+        <h4>Feedback</h4>
+        <input type="text" placeholder="Your Name"><br>
+        <textarea placeholder="Your feedback"></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+   
+</div>
+    <!-- <iframe src="https://www.example.com" width="300" height="200" style="border:1px solid black;"></iframe> -->
 
 </body>
 </html>
+
+ 
