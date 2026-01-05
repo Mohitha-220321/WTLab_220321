@@ -1,0 +1,226 @@
+html, body{
+    height: 100%;
+    overflow: hidden; 
+}
+
+
+
+
+body{
+    background: url('pic.jpg');
+    background-position: bottom top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:black;
+    font-size:18px;
+
+}
+
+.searchbar{
+    height:10vh;
+    background-color:black;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.searchbarParentDiv{
+    width:50%;
+    height:fit-content;
+    position:relative;
+}
+
+.inputfield{
+    width:100%;
+    border-radius:25px;
+    padding:10px;
+    align-items: center;
+}
+
+.searchicon{
+    width:20px;
+    height:20px;
+    position:absolute;
+    top:20%;
+    right:10px;
+}
+
+.searchicon:hover{
+    cursor:pointer;
+}
+
+.MainContentParentDiv{
+    width:100%;
+    height:90vh;
+    display:flex;
+}
+
+.leftDiv{
+    width:30%;
+    height:100%;
+   /* border:1px solid black;*/
+}
+
+.leftchild{
+    width:90%;
+    height:45%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius:10px;
+    margin:5%;
+    min-height:45%;
+    height:auto;
+}
+
+
+
+.d-flex{
+    display: flex;
+    align-items: center;
+}
+
+h5, h6{
+    margin: 0;
+    line-height: 1.7;
+}
+
+.currentTempDiv{
+    font-size: larger;
+}
+
+#cityName{
+    font-size: large;
+}
+
+#cityTemp{
+    font-size: x-large;
+}
+
+#weatherDesc{
+    font-size: large;
+}
+
+#date{
+    font-size:large;
+}
+
+#time{
+    font-size:large;
+}
+
+.nextFiveDays.leftchild{
+    font-size: 27px;
+    color:black;
+}
+
+.forecastTable{
+    width:100%;
+    border-collapse: collapse;  
+}
+
+.forecastTable td{
+    padding:8px 5px;
+    font-size:large;
+    color:black;
+}
+
+.tempCell{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:x-large;
+}
+.rightDiv{
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    width: 70%;
+    height: 90vh;
+     border: 1px solid black; 
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;                  
+    backdrop-filter: blur(10px);
+}
+.rightrow{
+    width: 100%;
+    flex: 1;                     
+   /* border: 1px solid black;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: rgba(255,255,255,0.2); */
+}
+.other,.SS{
+     background: rgba(255,255,255,0.2);
+     padding:4%;  
+     width: fit-content;
+     border-radius:10px;
+     display: flex;
+     align-items: center;
+     flex-direction: row;
+     gap:10px;
+
+
+}
+.rowOne,.rowTwo{
+    justify-content: space-around;
+}
+
+.today{
+    background: rgba(255,255,255,0.2);
+    padding: 14px;         
+    border-radius:10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    height: 10vh;
+    flex: 0 1 auto;     
+    min-width: fit-content;
+}
+
+.rowThree{
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 18px;
+   height:50vh;
+    gap: 8px;
+}
+.rowHeading{
+    font-size: large;
+}
+
+.todayRow{
+    display: flex;
+    width: 98%;
+   
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: nowrap;
+    overflow: hidden;    
+}
+
+.today h5{
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+
+body{
+    overflow-x: hidden;
+}
+
+
+
+
+
