@@ -1,0 +1,18 @@
+{
+    "name": "user/mango",
+    "autoload": {
+        "psr-4": {
+            "User\\Mango\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mohitha-n220321",
+            "email": "n220321@rguktn.ac.in"
+        }
+    ],
+    "require": {
+        "mongodb/mongodb": "^2.2",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
