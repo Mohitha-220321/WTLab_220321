@@ -1,11 +1,15 @@
 <?php
-require_once 'vendor/autoload.php';
+require_once '../vendor/autoload.php';
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
+$dotenv->load();
+
 session_start();
 
 $client = new Google_Client();
 
-$client->setClientId("631525988418-idsp3sgisk9fu24bc18kobe80ebe0j39.apps.googleusercontent.com");
-$client->setClientSecret("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");
+$client->setClientId($_ENV['GOOGLE_CLIENT_ID']);
+$client->setClientSecret($_ENV['GOOGLE_CLIENT_SECRET']);
 
 $client->setRedirectUri("http://localhost/wT/oauth/callback.php");
 
