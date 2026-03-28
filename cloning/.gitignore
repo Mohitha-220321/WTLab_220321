@@ -1,0 +1,8 @@
+# Ignore environment file
+mango/.env
+
+# Ignore vendor folder
+mango/vendor/
+
+# Ignore composer setup
+mango/composer-setup.php

@@ -1,0 +1,264 @@
+<!-- <!DOCTYPE html> 
+<html>
+<body>
+
+<script>
+  alert("Welcome to JavaScript!");
+    let name=prompt('enter your name:');
+    if (name){
+         alert('hello '+ name + '!');
+         console.log('user : '+ name);
+    }
+    else{
+        alert("u didn't enter your name " );
+        
+    }
+
+</script>
+
+</body>
+</html>-->
+<!--
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="myText">Original Text</h2>
+
+<button onclick="changeContent()">Click Me</button>
+
+<script>
+function changeContent() {
+    document.getElementById("myText").innerHTML = "Content Changed!";
+}
+</script>
+
+</body>
+</html>
+-->
+ <!--
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="myText">Hello, JavaScript Styling!</h2>
+
+<button onclick="toggleStyle()">Toggle Style</button>
+
+<script>
+let isStyled = true;  // Keeps track of current style
+
+function toggleStyle() {
+    let text = document.getElementById("myText");
+
+    if (isStyled) {
+        
+        text.style.color = "black";
+        text.style.fontSize = "20px";
+        text.style.backgroundColor = "gray";
+    } else {
+
+        text.style.color = "black";
+        text.style.fontSize = "30px";
+        text.style.backgroundColor = "yellow";
+    }
+
+    isStyled = !isStyled; // Flip the state
+}
+</script>
+
+</body>
+</html>
+-->
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Events and Functions</title>
+</head>
+<body>
+
+<h2 id="myText">Hello, JavaScript Styling!</h2>
+
+<button onclick="changeStyle()">Change Style</button>
+
+<script>
+    function changeStyle() {
+        let text = document.getElementById("myText");
+
+        text.style.color = "white";
+        text.style.fontSize = "30px";
+        text.style.backgroundColor = "blue";
+        text.style.padding = "10px";
+    }
+</script>
+
+</body>
+</html>
+-->
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mouse Events</title>
+</head>
+<body>
+
+<h2 id="myText"
+    onmouseover="mouseOver()"
+    onmouseout="mouseOut()">
+    Hover over this text
+</h2>
+
+<script>
+    function mouseOver() {
+        let text = document.getElementById("myText");
+        text.style.color = "white";
+        text.style.backgroundColor = "green";
+        text.style.fontSize = "30px";
+        text.style.padding = "10px";
+    }
+
+    function mouseOut() {
+        let text = document.getElementById("myText");
+        text.style.color = "black";
+        text.style.backgroundColor = "transparent";
+        text.style.fontSize = "20px";
+    }
+</script>
+
+</body>
+</html>
+-->
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Submit Event</title>
+</head>
+<body>
+
+<form onsubmit="submitForm()">
+    <label>Name:</label>
+    <input type="text" required>
+    <br><br>
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+    function submitForm() {
+        console.log("Form has been submitted successfully!");
+    }
+</script>
+
+</body>
+</html>
+-->
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Webpage</title>
+</head>
+<body>
+
+<h2 id="greeting"></h2>
+
+<script>
+    let name = prompt("Enter your name:");
+
+    if (name !== null && name.trim() !== "") {
+        document.getElementById("greeting").innerText =
+            "Hello, " + name + "! Welcome to our webpage";
+    } else {
+        document.getElementById("greeting").innerText =
+            "Hello! Welcome to our webpage ";
+    }
+</script>
+
+</body>
+</html>-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>audio and vedio</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <h2>Audio Example</h2>
+    <audio controls>
+        <source src="music.mpeg" type="audio/mpeg">
+        
+    </audio>
+
+    <h2>Video Example</h2>
+    <video width="500" height="240" controls>
+        <source src="video.mp4" type="video/mp4"> 
+    </video>
+    <h2>Embedding a Webpages using IFRAME</h2>
+    <iframe src="weather.html" width="700" height="300" title="Example Iframe"></iframe>
+    <iframe src="https://telugu.way2news.com/" width="600" height="300"></iframe>
+    <iframe src="JAVA CONTENT (1).pdf" width="700" height="300"></iframe>
+
+    <h3>Example Table</h3>
+    <table border="2px" style="border-collapse:collapse; align-content:center; background-color:rgb(178, 233, 214);" >
+    <tr>
+        <th>Name</th>
+        <th>Branch</th>
+        <th>section</th>
+    </tr>       
+    <tr>
+        <td >Mohitha</td>
+        <td>cse</td>
+        <td>cse-1</td>
+    </tr> 
+     <tr>
+        <td>Asreetha</td>
+        <td>cse</td>
+        <td>cse-1</td>
+    </tr>  <tr>
+        <td>Keerthi</td>
+        <td>cse</td>
+        <td>cse-1</td>
+    </tr> 
+    <caption> Table (Inline)</caption>
+    </table>    
+
+ 
+    <table class="student-table">
+    <caption>Table (External)</caption>
+    <tr>
+        <th>Name</th>
+        <th>Branch</th>
+        <th>Section</th>
+    </tr>       
+    <tr>
+        <td>Mohitha</td>
+        <td>CSE</td>
+        <td>CSE-1</td>
+    </tr> 
+    <tr>
+        <td>Asreetha</td>
+        <td>CSE</td>
+        <td>CSE-1</td>
+    </tr>  
+    <tr>
+        <td>Keerthi</td>
+        <td>CSE</td>
+        <td>CSE-1</td>
+    </tr> 
+</table>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

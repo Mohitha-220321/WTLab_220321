@@ -1,0 +1,13 @@
+Column,Type,Min,Max,Mean,"Unique Values"
+Rank,Numeric,1,1000,500.5,-
+Title,Numeric,21,2012,635.67,-
+Genre,Non-Numeric,-,-,-,207
+Description,Non-Numeric,-,-,-,1000
+Director,Non-Numeric,-,-,-,644
+Actors,Non-Numeric,-,-,-,996
+Year,Numeric,2006,2016,2012.78,-
+"Runtime (Minutes)",Numeric,66,191,113.17,-
+Rating,Numeric,1.9,9,6.72,-
+Votes,Numeric,61,1791916,169808.26,-
+"Revenue (Millions)",Numeric,0,936.63,82.96,-
+Metascore,Numeric,11,100,58.99,-

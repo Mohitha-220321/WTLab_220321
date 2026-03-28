@@ -1,0 +1,137 @@
+/* /* ===================== LOGIN FORM CSS (UNCHANGED) ===================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg, #99ccee, #c49bd6);
+    font-family: Arial, sans-serif;
+}
+
+.login-box {
+    background: white;
+    padding: 40px;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.login-box input:focus {
+    outline: none;
+    border-color: #2980b9;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background: #2980b9;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background: #1f6391;
+}
+
+.login-box p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-box a {
+    text-decoration: none;
+    color: #2980b9;
+}
+
+.login-box a:hover {
+    text-decoration: underline;
+}
+
+/* ===================== REGISTRATION FORM CSS (NEW) ===================== */
+
+.register-box {
+    background: white;
+    padding: 40px;
+    width: 380px;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.register-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+.register-box input,
+.register-box select {
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.register-box input:focus,
+.register-box select:focus {
+    outline: none;
+    border-color: #6a89cc;
+}
+
+.register-box select {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.register-box button {
+    width: 100%;
+    padding: 11px;
+    background: #6a89cc;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.register-box button:hover {
+    background: #4a69bd;
+}
+
+.register-box p {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+.register-box a {
+    text-decoration: none;
+    color: #6a89cc;
+}
+
+.register-box a:hover {
+    text-decoration: underline;
+}
